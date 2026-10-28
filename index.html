@@ -1,16 +1,53 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kirby Path</title>
+
+    <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <!--connection to css and js-->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Kirby Path!! :D</h1>
+    <!--inicio (first page)-->
+    <section id="Inicio" class="pantalla">
+        <div class="tarjeta">
+            <h1>Kirby Path</h1>
+            <p> Answer some quick questions about what you'd <b>love</b> to do (not necessarily what you're good at),
+                and
+                we'll tell you which Kirby you're! </p>
+            <p>Heads up: There are 5 Kirby types available for now, but we'll keep adding more over time! </p>
+            <button id="btn-empezar" class="boton"> Start test </button>
+        </div>
+    </section>
+
+    <!--test (second page)-->
+    <section id="test" class="pantalla">
+    </section>
+
+    <!--resultado (third page)-->
+    <section id="resultado" class="pantalla">
+        <div class="tarjeta">
+            <p id="progress"> Question 1 of 24</p>
+            <p> How much would you like to...</p>
+            <h2 id="text-question"> Here will appear the activity</h2>
+            <div class="options">
+                <button class="option" data-valor="0"> I wouldn't like </button>
+                <button class="option" data-valor="1"> Meh...</button>
+                <button class="option" data-valor="2"> I would like it</button>
+                <button class="option" data-valor="3"> I would LOVE it</button>
+            </div>
+        </div>
+    </section>
 
 </body>
+
 </html>
