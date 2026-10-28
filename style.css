@@ -84,3 +84,21 @@ h2 {
     transform: translate(3px,3px);
 }
 
+/* result */
+.img-resultado {
+    display:block;
+    width: 160px;
+    margin: 0 auto 16px;
+    image-rendering: pixelated;
+
+}
+
+.carrera {
+    display: inline-block;
+    background-color:#ffd23f;
+    border: 3px solid #2b1b4a;
+    padding: 6px 14px;
+    font-size: 1.3rem;
+    margin: 0 0 8px;
+
+}
